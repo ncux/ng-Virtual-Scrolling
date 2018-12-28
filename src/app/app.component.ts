@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  title = 'Angular 7 – Virtual Scrolling';
+  scrollingItems: number[] = [];
+
+  constructor() {
+    for (let i = 0; i < 5000; i++) {
+      this.scrollingItems.push(i);
+    }
+  }
+
 }
